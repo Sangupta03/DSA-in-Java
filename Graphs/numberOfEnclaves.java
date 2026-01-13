@@ -1,3 +1,5 @@
+package Graphs;
+
 class numberOfEnclaves {
     public int numEnclaves(int[][] grid) {
         int n=grid.length;

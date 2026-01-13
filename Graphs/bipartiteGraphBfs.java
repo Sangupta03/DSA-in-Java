@@ -1,3 +1,6 @@
+package Graphs;
+import java.util.*;
+
 class bipartiteGraphBfs {
     public boolean isBipartite(int V, int[][] edges) {
         // Code here

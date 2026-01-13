@@ -1,3 +1,5 @@
+package Graphs;
+
 class surroundedRegions {
     public void solve(char[][] board) {
         int n=board.length;
