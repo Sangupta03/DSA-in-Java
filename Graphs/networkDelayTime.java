@@ -9,8 +9,8 @@ class Pair{
         this.second=second;
     }
 }
-class Solution {
-    public int networkDelayTime(int[][] times, int n, int k) {
+class networkDelayTime {
+    public int networkDelayTimeQ(int[][] times, int n, int k) {
         ArrayList<ArrayList<Pair>> adj=new ArrayList<>();
 
         for(int i=0;i<=n;i++) adj.add(new ArrayList<>());
