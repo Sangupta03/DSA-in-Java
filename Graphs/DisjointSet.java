@@ -44,7 +44,7 @@ public class DisjointSet {
       size.set(ulp_v,size.get(ulp_u)+size.get(ulp_v));
     }else{
       parent.set(ulp_v,ulp_u);
-      size.set(ulp_v,size.get(ulp_v)+size.get(ulp_u));
+      size.set(ulp_u,size.get(ulp_v)+size.get(ulp_u));
     } //both for equals and ulp_u greater than ulp_v
 
   }
