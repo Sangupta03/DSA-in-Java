@@ -72,3 +72,4 @@ class DisjointSet{
             size.set(ulp_u,size.get(ulp_v)+size.get(ulp_u));
         }
     }
+}
