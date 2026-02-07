@@ -30,8 +30,7 @@ class makingLargeIsland {
         //find zeroes and check
         for(int row=0;row<n;row++){
             for(int col=0;col<n;col++){
-                int node=row*n+col;
-
+             
                 if(grid[row][col]==1) continue;
 
                 int sizeTotal=0;
