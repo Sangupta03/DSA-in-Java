@@ -2,13 +2,13 @@ package Heaps;
 
 class binaryHeap {
   // Maximum elements that can be stored in heap
-  static int capacity;  
+  int capacity;  
   
   // Current no of elements in heap
-  static int size;  
+  int size;  
   
   // Array for storing the keys
-  static int arr[];  
+  int arr[];  
 
   binaryHeap(int cap) {
     // Assigning the capacity
@@ -22,22 +22,22 @@ class binaryHeap {
   }
 
   // Returns the parent of ith Node
-  static int parent(int i) {
+  int parent(int i) {
     return (i - 1) / 2;
   }
 
   // Returns the left child of ith Node
-  static int left(int i) {
+  int left(int i) {
     return 2 * i + 1;
   }
 
   // Returns the right child of the ith Node
-  static int right(int i) {
+  int right(int i) {
     return 2 * i + 2;
   }
 
   // Insert a new key x
-  static void Insert(int x) {
+  void Insert(int x) {
     if (size == capacity) {
       System.out.println("Binary Heap Overflown");
       return;
@@ -61,7 +61,7 @@ class binaryHeap {
     }
   }
 
-  static void Heapify(int ind) {
+  void Heapify(int ind) {
     // Right child
     int ri = right(ind);  
     
@@ -87,11 +87,11 @@ class binaryHeap {
     }
   }
 
-  static int getMin() {
+  int getMin() {
     return arr[0];
   }
 
-  static int ExtractMin() {
+  int ExtractMin() {
     if (size <= 0)
       return Integer.MAX_VALUE;
 
@@ -113,7 +113,7 @@ class binaryHeap {
     return mini;
   }
 
-  static void Decreasekey(int i, int val) {
+  void Decreasekey(int i, int val) {
     // Updating the new value
     arr[i] = val;  
 
@@ -126,19 +126,19 @@ class binaryHeap {
     }
   }
 
-  static void Delete(int i) {
+  void Delete(int i) {
     Decreasekey(i, Integer.MIN_VALUE);
     ExtractMin();
   }
 
-  static void print() {
+  void print() {
     for (int i = 0; i < size; i++)
       System.out.print(arr[i] + " ");
     System.out.println();
   }
 
   public static void main(String args[]) {
-    BinaryHeap h = new BinaryHeap(20);
+    binaryHeap h = new binaryHeap(20);
 
     h.Insert(4);
     h.Insert(1);
