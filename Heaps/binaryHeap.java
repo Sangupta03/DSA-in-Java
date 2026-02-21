@@ -15,7 +15,7 @@ class binaryHeap {
     capacity = cap;  
     
     // Initially size of heap is zero
-    size = 0;  
+    size = 0;   
     
     // Creating an array
     arr = new int[capacity];  
