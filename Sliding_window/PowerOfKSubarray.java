@@ -1,4 +1,4 @@
-package SlidingWindow;
+package Sliding_window;
 
 class PowerOfKSubarray {
     public int[] resultsArray(int[] nums, int k) {
