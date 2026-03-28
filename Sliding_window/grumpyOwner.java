@@ -1,4 +1,4 @@
-class Solution {
+class grumpyOwner {
     public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
 
         int base=0;
