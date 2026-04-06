@@ -28,7 +28,7 @@ class Solution {
 }
 
 
-class Solution {
+class Solution1 {
     public int minCostClimbingStairs(int[] cost) {
         int n=cost.length;
         int[] dp=new int[n+1];
@@ -42,7 +42,7 @@ class Solution {
     }
 }
 
-class Solution {
+class Solution2 {
     public int minCostClimbingStairs(int[] cost) {
         int n=cost.length;
     
