@@ -1,6 +1,6 @@
 package StacksANDqueues;
-
-class sumOfSuba {
+import java.util.*;
+class sumOfSubarrMin {
     public int sumSubarrayMins(int[] arr) {
 
         long MOD=1000000007;
