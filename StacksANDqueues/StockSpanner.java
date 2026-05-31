@@ -1,5 +1,5 @@
 package StacksANDqueues;
-
+import java.util.*;
 class Value{
     int idx;
     int val;
