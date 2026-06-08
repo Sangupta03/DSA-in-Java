@@ -45,7 +45,7 @@ class reversePairsQ {
         }
     }
     public int cntPairs(int[] nums,int low,int mid,int high){
-        int left=low;
+        
         int right=mid+1;
         int cnt=0;
 
