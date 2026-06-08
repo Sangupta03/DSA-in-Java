@@ -1,3 +1,4 @@
+import java.util.*;
 class reversePairsQ {
     public int reversePairs(int[] nums) {
         int n=nums.length;
