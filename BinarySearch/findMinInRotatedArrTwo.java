@@ -1,3 +1,5 @@
+package BinarySearch;
+
 class findMinInRotatedArrTwo {
     public int findMin(int[] nums) {
         int n=nums.length;
