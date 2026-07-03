@@ -4,7 +4,7 @@ package Sliding_window;
 import java.util.*;
 class groupAnagramsQ {
     public List<List<String>> groupAnagrams(String[] strs) {
-        HashMap<String,List> res=new HashMap<>();
+        HashMap<String, List<String>> res = new HashMap<>();
 
         for(String str: strs){
             int[] count=new int[26];
@@ -22,6 +22,6 @@ class groupAnagramsQ {
             }
             res.get(key).add(str);
         }
-        return new ArrayList(res.values());
+        return new ArrayList<>(res.values());
     }
 }
