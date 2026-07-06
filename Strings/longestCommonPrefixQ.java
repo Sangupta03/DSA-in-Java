@@ -1,5 +1,3 @@
-package Strings;
-
 class longestCommonPrefixQ {
     public String longestCommonPrefix(String[] strs) {
         
