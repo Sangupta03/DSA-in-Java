@@ -1,4 +1,3 @@
-package Strings;
 
 class minToMakeparenthesisValid {
     public int minAddToMakeValid(String s) {

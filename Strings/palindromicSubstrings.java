@@ -1,4 +1,3 @@
-package Strings;
 
 class palindromicSubstrings {
     public int countSubstrings(String s) {

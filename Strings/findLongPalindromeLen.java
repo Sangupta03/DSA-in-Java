@@ -1,5 +1,4 @@
 
-package Strings;
 class findLongPalindromeLen {
     public int longestPalindrome(String s) {
         int[] freq=new int[128];

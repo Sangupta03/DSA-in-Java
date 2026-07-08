@@ -1,4 +1,4 @@
-package Strings;
+
 import java.util.*;
 class permutationInString {
     public boolean checkInclusion(String s1, String s2) {

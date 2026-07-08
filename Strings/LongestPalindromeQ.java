@@ -1,5 +1,3 @@
-package Strings;
-
 class  LongestPalindromeQ {
     public String longestPalindrome(String s) {
         if(s==null || s.isEmpty()) return "";

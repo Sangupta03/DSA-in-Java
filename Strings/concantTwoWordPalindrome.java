@@ -1,4 +1,4 @@
-package Strings;
+
 import java.util.*;
 class concantTwoWordPalindrome {
     public int longestPalindrome(String[] words) {
