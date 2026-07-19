@@ -1,6 +1,6 @@
 package BinarySearch;
 
-class Solution {
+class minimiseDistOfStations {
     public double minMaxDist(int[] stations, int K) {
 
         int n = stations.length;
