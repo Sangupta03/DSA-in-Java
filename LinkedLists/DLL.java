@@ -1,5 +1,3 @@
-package LinkedLists;
-
 class Node{
     int data;
     Node prev;
