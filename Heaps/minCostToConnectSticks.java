@@ -1,4 +1,4 @@
-package Heaps;
+
 import java.util.*;
 class minCostToConnectSticks {
     public static int minCost(int[] arr) {
