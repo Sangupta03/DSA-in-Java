@@ -1,5 +1,3 @@
-package LinkedLists;
-
 class deleteMiddleQ {
     public ListNode deleteMiddle(ListNode head) {
         if(head==null || head.next==null){
@@ -17,7 +15,7 @@ class deleteMiddleQ {
         return head; 
     }
 }
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
