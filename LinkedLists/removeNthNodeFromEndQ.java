@@ -1,5 +1,3 @@
-package LinkedLists;
-
 class removeNthFromEndQ {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head==null || head.next==null) return null;
