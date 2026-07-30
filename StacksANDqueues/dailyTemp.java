@@ -1,3 +1,7 @@
+package StacksANDqueues;
+
+import java.util.Stack;
+
 class dailyTemp {
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
