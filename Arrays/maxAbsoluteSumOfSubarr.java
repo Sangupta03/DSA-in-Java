@@ -1,4 +1,5 @@
 import java.util.*;
+//USE KADANE ALGO
 class maxAbsoluteSumOfSubarr {
     public int subarraysDivByK(int[] nums, int k) {
         int cnt=0;
