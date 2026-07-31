@@ -29,3 +29,26 @@ class scoreOfParentheses {
         return score;
     }
 }
+
+//Optimal Solution using nesting depth logic, find it for every () and count each ones contribution
+
+class Solution {
+    public int scoreOfParentheses(String s) {
+        int depth=0;
+        int ans=0;
+
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(ch=='('){
+                depth++;
+            }else{
+                depth--;
+
+                if(s.charAt(i-1)=='('){
+                    ans+=(1<<depth);
+                }
+            }
+        }
+        return ans;
+    }
+}
