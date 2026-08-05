@@ -1,6 +1,5 @@
-package Greedy;
+package Heaps;
 import java.util.*;
-
 class optimalFileMerge {
     public int minComputation(int[] files) {
         PriorityQueue<Integer> pq=new PriorityQueue<>();
