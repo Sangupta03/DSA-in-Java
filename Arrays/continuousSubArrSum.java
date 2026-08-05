@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class continuousSubArrSum {
     public boolean checkSubarraySum(int[] nums, int k) {
         int n=nums.length;
         HashMap<Integer,Integer> hp=new HashMap<>();
