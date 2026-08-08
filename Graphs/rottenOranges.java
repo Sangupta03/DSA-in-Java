@@ -1,6 +1,6 @@
 package Graphs;
 import java.util.*;
-class Solution {
+class rottenOranges {
     public int orangesRotting(int[][] grid) {
         int n=grid.length;
         int m=grid[0].length;
