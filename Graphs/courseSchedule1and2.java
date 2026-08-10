@@ -48,3 +48,53 @@ class Solution {
 
     }
 }
+
+
+//using dfs
+
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> adj=new ArrayList<>();
+
+        int V=numCourses;
+
+        for(int i=0;i<V;i++){
+            adj.add(new ArrayList<>());
+        }
+
+        for(int[] e:prerequisites){
+            int u=e[1];
+            int v=e[0];
+
+            adj.get(u).add(v);
+        }
+        boolean[] vis=new boolean[V];
+        boolean[] pathvis=new boolean[V];
+
+        for(int i=0;i<V;i++){
+            if(!vis[i]){
+               if(dfs(i,pathvis,vis,adj)){
+                return false;
+               }
+            }
+        }
+        return true;
+    }
+
+    public boolean dfs(int node,boolean[] pathvis,boolean[] vis,List<List<Integer>> adj){
+        vis[node]=true;
+        pathvis[node]=true;
+
+        for(int nbh:adj.get(node)){
+            if(!vis[nbh]){
+                if(dfs(nbh,pathvis,vis,adj)){
+                    return true;
+                }
+            }else if(pathvis[nbh]){
+                return true;
+            }
+        }
+        pathvis[node]=false;
+        return false;
+    }
+}
