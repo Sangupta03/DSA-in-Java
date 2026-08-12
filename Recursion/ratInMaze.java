@@ -2,7 +2,7 @@ package Recursion;
 import java.util.*;
 
 class ratInMaze {
-    public ArrayList<String> ratInMaze(int[][] maze) {
+    public ArrayList<String> ratInMazeQ(int[][] maze) {
         // code here
         ArrayList<String> ans=new ArrayList<>();
         int n=maze.length;
