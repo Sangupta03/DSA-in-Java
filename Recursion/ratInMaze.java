@@ -1,5 +1,7 @@
 package Recursion;
-class Solution {
+import java.util.*;
+
+class ratInMaze {
     public ArrayList<String> ratInMaze(int[][] maze) {
         // code here
         ArrayList<String> ans=new ArrayList<>();
