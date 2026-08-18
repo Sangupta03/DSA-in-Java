@@ -1,5 +1,5 @@
 package Greedy;
-
+import java.util.*;
 //almost same concept as jump game 2;
 //convert into ranges/intervals then solve
 class Solution {
