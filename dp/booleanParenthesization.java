@@ -1,7 +1,7 @@
 import java.util.*;
 class booleanParenthesization {
     static int countWays(String s) {
-        
+
         int n=s.length();
         int[][][] dp=new int[n][n][2];
         for (int[][] arr2D : dp) {
