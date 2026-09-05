@@ -321,14 +321,23 @@ inorder the instant I reach the kth."
 
 **Optimal (T3 with an early exit):**
 ```java
-int kthSmallest(TreeNode root, int k) {
+public int kthSmallest(TreeNode root, int k) {
     Deque<TreeNode> stack = new ArrayDeque<>();
-    TreeNode curr = root;
-    while (curr != null || !stack.isEmpty()) {
-        while (curr != null) { stack.push(curr); curr = curr.left; }
-        curr = stack.pop();
-        if (--k == 0) return curr.val;    // early exit at the kth-smallest
-        curr = curr.right;
+    
+    while (root != null || !stack.isEmpty()) {
+        if (root != null) {
+            stack.push(root);
+            root = root.left;
+        } else {
+            root = stack.pop();
+            
+            k = k - 1;       // Decrement k explicitly
+            if (k == 0) {    // Check if we reached the target
+                return root.val;
+            }
+            
+            root = root.right;
+        }
     }
     return -1;
 }
@@ -360,6 +369,27 @@ class BSTIterator {
     public boolean hasNext() { return !stack.isEmpty(); }
 }
 ```
+How Each Method Works
+1. pushLeft(node) — "Dive to the Smallest"
+Logic: Starts at node and follows .left pointers all the way down, pushing every node onto the stack along the way.
+
+Why: The stack stores elements in reverse order of their arrival. Pushing nodes as we dive left means the smallest node ends up at the top of the stack.
+
+2. hasNext() — "Are There More Elements?"
+Logic: Returns !stack.isEmpty().
+
+Why: As long as the stack has nodes, there is a next smallest element waiting to be processed.
+
+3. next() — "Give Me the Next Smallest"
+Logic:
+
+pop() the top node from the stack. This is your current smallest element.
+
+Before returning its value, check if it has a right child (node.right != null).
+
+If it does, call pushLeft(node.right).
+
+Why: In an inorder traversal, after visiting a node (Root), you must visit its Right Subtree. But the smallest element in that right subtree is its bottom-most left node! So, you pass node.right to pushLeft to load that entire left branch onto the stack.
 
 **Test case:** on `{7,3,15,null,null,9,20}`: next→3, next→7, hasNext→true, next→9, next→15, next→20, hasNext→false.
 
