@@ -41,7 +41,6 @@ class myQueue {
     public void dequeue() {
         // Dequeue
         if(isEmpty()) return;
-        int ele=arr[front];
         if(size==1){
             rear=front=-1; //reset pointers
         }else{
