@@ -1,4 +1,4 @@
-class Solution {
+class removeDuplicates {
     public ListNode deleteDuplicates(ListNode head) {
        if(head==null || head.next==null) return head;
        ListNode curr=head;
@@ -12,4 +12,12 @@ class Solution {
        }
        return head;
     }
+}
+class ListNode{
+  ListNode next;
+  int val;
+  ListNode(int val,ListNode next){
+    this.next=next;
+    this.val=val;
+  }
 }
